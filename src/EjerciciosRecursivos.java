@@ -21,5 +21,35 @@ public class EjerciciosRecursivos {
 
     }
 
+
+
+    public int getPotencia( int base, int exponente ){
+        if(exponente == 0){
+            return  base=1;
+        }
+        
+        int resultadoPotencia = base * getPotencia(base, exponente-1);
+        
+        return resultadoPotencia;
+
+    }
+    public int getSumaDigitos(int n ){
+        if( n < 10){
+            return n;
+        }else {
+            int num = n % 10;
+            int num2 = n/10;
+            
+            return getSumaDigitos(num2) + num;
+            
+        }
+        
+       
+        
+        
+        
+    }
+    
+
     
 }
