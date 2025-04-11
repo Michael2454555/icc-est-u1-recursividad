@@ -18,6 +18,20 @@ public class App {
 
         int resultadoDigitos = ejercicios.getSumaDigitos(125);
         System.out.println("-resultado digitos = "  +  resultadoDigitos);
+
+
+        // Descendente
+        System.out.print("Numeros descendentes de 10:  ");
+         int resultadoDescendente = ejercicios.numerosDescendente (10);
+         System.out.println("");
+
+
+
+         //Resultado reverso
+         System.out.println("");
+         int resultadoReverso = ejercicios.reverso(1234, 0);
+         System.out.println("Reverso de 1234 = " + resultadoReverso);
+
     }
 
     public static int factorial(int n) {
